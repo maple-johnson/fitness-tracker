@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Summary</title>
+        <link rel="stylesheet" href="styles/summary.css">
+    </head>
+
+    <body>
+
+        <div>
+
+            <h1>Summary</h1>
+
+            <% for (let i =0; i < workouts.length; i++) { %>
+                <div id="workout">
+                    <h3>Logged Workout</h3>
+                    <hr>
+                    <p><b>Workout Type:</b> <%= workouts[i].woType %></p>
+                    <p><b>Duration:</b> <%= workouts[i].woTime %> minutes</p>
+                    <p><b>Intensity:</b> <%= workouts[i].woLevel %></p>
+                    <p><b>Date:</b> <%= workouts[i].woDate %></p>
+                    <p><b>Notes:</b> <%= workouts[i].woNotes %></p>
+                    <p></p>
+                </div>
+            <% } %>
+
+            <p></p>
+
+            <form action="/" method="get">
+                <button type="submit" id="button">Log Another Workout</button>
+            </form>
+
+        </div>
+
+    </body>
+
+</html>

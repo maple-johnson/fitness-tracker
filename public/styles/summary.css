@@ -1,0 +1,23 @@
+body {
+    background-color: lightsalmon;
+}
+
+h1 {
+    text-align: center;
+}
+
+hr {
+    border-color: darkviolet;
+}
+
+#workout {
+    border-style: solid;
+    background-color: lavender;
+    padding-left: 2px;
+}
+
+#button {
+    background-color: lavender;
+    border-color: lavender;
+    border-radius: 5px;
+}

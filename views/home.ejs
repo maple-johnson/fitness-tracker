@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Personal Fitness Tracker</title>
+        <link rel="stylesheet" href="styles/home.css">
+    </head>
+
+    <body>
+
+        <div id="section">
+
+            <h1>Personal Fitness Tracker</h1>
+
+            <form action="summary" method="post">
+
+                <fieldset class="field">
+                    <legend>Workout Type:</legend>
+                    <select name="woType">
+                        <option value="none">-- Please Select An Option --</option>
+                        <option value="run">Running</option>
+                        <option value="weights">Weightlifting</option>
+                        <option value="yoga">Yoga</option>
+                        <option value="bike">Cycling</option>
+                        <option value="other">Other</option>
+                    </select>
+                </fieldset>
+
+                <br>
+
+                <fieldset class="field">
+                    <legend>Duration (minutes):</legend>
+                    <label>
+                        <input type="text" name="woTime">
+                    </label>
+                </fieldset>
+
+                <br>
+
+                <fieldset class="field">
+                    <legend>Intensity Level:</legend>
+                    <label>
+                        <input type="radio" name="woLevel" value="low">
+                        Low
+                    </label>
+                    <label>
+                        <input type="radio" name="woLevel" value="medium">
+                        Medium
+                    </label>
+                    <label>
+                        <input type="radio" name="woLevel" value="high">
+                        High
+                    </label>
+                </fieldset>
+
+                <br>
+
+                <fieldset class="field">
+                    <legend>Date:</legend>
+                    <label>
+                        <input type="date" name="woDate">
+                    </label>
+                </fieldset>
+
+                <br>
+
+                <fieldset class="field">
+                    <legend>Notes:</legend>
+                    <label>
+                        <textarea name="woNotes"></textarea>
+                    </label>
+                </fieldset>
+
+                <br>
+
+                <button type="submit" id="button">Log Workout</button>
+
+                <p></p>
+
+            </form>
+
+        </div>
+
+    </body>
+
+</html>

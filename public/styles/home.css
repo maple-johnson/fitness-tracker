@@ -1,0 +1,28 @@
+body {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    background-color: lightsalmon;
+}
+
+legend {
+    font-weight: bold;
+}
+
+#button {
+    background-color: lightpink;
+    border-color: lightpink;
+    border-radius: 5px;
+}
+
+#section {
+    background-color: lavender;
+    justify-content: stretch;
+    border-style: solid;
+    border-color: darkviolet;
+    border-radius: 5px;
+}
+
+.field {
+    border-style: none;
+}
